@@ -1,0 +1,117 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins%3Awght%40100%3B200%3B300%3B400&display=swap%27%29%3B);
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins', 'sans-serif';
+}
+#social_media img {
+    width: 30px;
+}
+body {
+    background: var(--color-gradient);
+}
+.mode_icon {
+    font-size: 20px;
+
+}
+:root {
+    --color-white: #f8fafc;
+    --color-gray:#797984;
+    --color-dark:#312d37;
+    --color-dark-full:#000000;
+    --color-purple-100: #12145f;
+    --color-purple-200: #343c90;
+    --color-purple-300: #2a43c3;
+    --color-gradient: linear-gradient(90deg, var(--color-purple-100), var(--color-purple-200), var(--color-purple-300));
+}
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login_form {
+    background-color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    padding: 30px 40px;
+    border-radius: 8px;
+    gap: 25px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.336);
+    height: fit-content;
+}
+.form_header{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.form_header h1 {
+    position: relative;
+}
+.form_header h1:befre {
+    position: absolute;
+    content: '';
+    width: 100%;
+    background-color: var(--color-purple-100);
+    height: 3px;
+    bottom: 8px;
+    border-radius: 5px;
+}
+.mode_icon:hover {
+    cursor: pointer;
+}
+#social_media {
+    display: flex;
+    justify-content: space-around;
+}
+#social_media img:hover {
+    transform: scale(1.1);
+}
+.input-box label{
+    font-size: 14px;
+}
+#inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.input-field {
+display: flex;
+align-items: center;
+gap: 10px;
+padding: 3px;
+border-bottom: 1px solid var(--color-purple-100);
+}
+.input-field input {
+    border: none;
+    background-color: transparent;
+    width: 200px;
+    font-size: 15px;
+}
+.input-field input:focus {
+outline: none;
+}
+.forgot-pass a {
+    font-size: 12px;
+    text-decoration: none;
+    color: var(--color-dark);
+}
+.forgot-pass a:hover {
+    color: var(--color-purple-100);
+}
+.login_button {
+    border: none;
+    background: var(--color-gradient);
+    color: var(--color-white);
+    padding: 7px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.login_button:hover {
+    transform: scale(1.05);
+}
